@@ -13,6 +13,11 @@ public class CallingCard
    
    public String format()
     {
-        return "Card Number: "+this.cardNumber+"\n"+"PIN: "+this.pin+"\n"+super.format();
+        return super.format()+"][Number="+this.cardNumber+",pin="+this.pin+"\n";
+    }
+    
+   public String toString()
+   {
+       return "CallingCard["+format();
     }
 }

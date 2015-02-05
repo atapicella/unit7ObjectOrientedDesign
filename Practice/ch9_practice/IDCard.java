@@ -11,7 +11,12 @@ public class IDCard
    
    public String format()
    {
-       return "Id Number: "+ this.idNumber+ "\n"+ super.format();
+       return super.format()+"][Id Number="+this.idNumber+"\n";
+    }
+    
+   public String toString()
+   {
+       return "IDCard["+format();
     }
 
 }

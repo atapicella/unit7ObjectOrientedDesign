@@ -29,4 +29,25 @@ public class Billfold
         }
         return format;
     }
+    
+    public int getExpiredCardCount()
+    {
+        int count = 0;
+        if (card1 != null)
+        {
+            if (card1.isExpired()==true)
+            {
+                count++;
+            }            
+        }
+        if (card2 != null)
+        {
+            if (card2.isExpired()==true)
+            {
+                count++;
+            } 
+        }
+        
+        return count;
+    }
 }
